@@ -1,5 +1,31 @@
 git --version
+
 git config --global user.name 'Akihiko Yanagisawa'
 git config --global user.email 'akihi.cocco@gamil.com'
 
+cd
+git init
+
+git config --global core.excludesfile ~/.gitignore_global
+echo ".DS_Store" >> ~/.gitignore_global
+
 git status
+
+git add *.*
+
+git status
+
+git rm --cached index.html
+git checkout -- index.html
+
+git commit
+
+■vi
+a #編集
+[esc] :wq #保存して閉じる
+
+git log #コミット履歴を表示
+
+git diff #前回コミット時からの変更を表示
+
+git commit -m "二回目のコミット"
