@@ -1,0 +1,5 @@
+git --version
+git config --global user.name 'Akihiko Yanagisawa'
+git config --global user.email 'akihi.cocco@gamil.com'
+
+git status
