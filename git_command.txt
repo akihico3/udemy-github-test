@@ -43,3 +43,9 @@ git rebase --continue
 git branch #自分がどこの枝にいるか確認
 git branch hoge #新しい枝を作成
 git checkout feater-branch
+
+git commit -am "メンバーにまつもとくんを追加" #AddとCommitを同時に行う
+
+git log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+git config --global alias.graph "log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+git graph #コミットの状態を表示
