@@ -24,8 +24,22 @@ git commit
 a #編集
 [esc] :wq #保存して閉じる
 
+◯ｖｉエディタの使い方
+http://net-newbie.com/linux/commands/vi.html
+
+
+
 git log #コミット履歴を表示
 
 git diff #前回コミット時からの変更を表示
 
 git commit -m "二回目のコミット"
+
+git commit --amend #コミットメッセージの変更
+
+git rebase -i <治したいコミットIDの前のID>
+git rebase --continue
+
+git branch #自分がどこの枝にいるか確認
+git branch hoge #新しい枝を作成
+git checkout feater-branch
